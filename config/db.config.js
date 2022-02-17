@@ -2,7 +2,7 @@ module.exports = {
     HOST: 'localhost',
     USER: 'root',
     PASSWORD: '',
-    DB: 'tutorial_db',
+    DB: 'rr_cube',
     dialect: 'mysql',
     dialectOptions: {
         socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'

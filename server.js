@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require('./routes/tutorial.routes')(app);
+require('./routes/user.routes')(app);
 
 app.get('*', function (req, res) {
     res.status(404).send('Page not found - 404');
