@@ -22,6 +22,9 @@ db.sequelize = sequelize;
 
 db.tutorial = require('./tutorial.model')(sequelize, Sequelize);
 db.user = require('./user.model')(sequelize, Sequelize);
+db.ressource = require('./ressource.model')(sequelize, Sequelize);
+db.category = require('./category.model')(sequelize, Sequelize);
+db.comment = require('./comment.model')(sequelize, Sequelize);
 
 
 module.exports = db;

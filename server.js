@@ -14,8 +14,18 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-require('./routes/tutorial.routes')(app);
+
+require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
+require('./routes/tutorial.routes')(app);
+require('./routes/ressource.routes')(app);
+require('./routes/category.routes')(app);
+require('./routes/comment.routes')(app);
+
+
+app.get('/', (req, res) => {
+    res.send('Hello API!');
+})
 
 app.get('*', function (req, res) {
     res.status(404).send('Page not found - 404');
