@@ -34,6 +34,9 @@ db.reportcomment = require('./reportcomment.model')(sequelize, Sequelize);
 db.ressourcecomment = require('./ressourcecomment.model')(sequelize, Sequelize);
 db.ressourcetype = require('./ressourcetype.model')(sequelize, Sequelize);
 db.role = require('./role.model')(sequelize, Sequelize);
+db.rolepermission = require('./rolepermission.model')(sequelize, Sequelize);
+db.sharetouser = require('./sharetouser.model')(sequelize, Sequelize);
+db.visibilitytype = require('./visibilitytype.model')(sequelize, Sequelize);
 
 
 module.exports = db;

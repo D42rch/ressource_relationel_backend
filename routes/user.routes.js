@@ -1,11 +1,19 @@
 module.exports = app => {
-    const users = require('../controllers/user.controller');
+  const users = require('../controllers/user.controller');
+  const checkAuth = require('../utils/authenticateToken');
 
-    var router = require('express').Router();
+  const {
+    registrationSchema,
+    registerValidation,
+  } = require('../utils/registerShema');
 
-    router.post('/', users.create);
+  var router = require('express').Router();
 
-    router.get('/', users.findAll);
+  router.post('/', registrationSchema, registerValidation, users.create);
 
-    app.use('/api/users', router);
+  router.get('/', users.findAll);
+
+  router.get('/me', checkAuth, users.me);
+
+  app.use('/api/users', router);
 }
