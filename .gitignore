@@ -1,2 +1,6 @@
 node_modules
 .env
+.code-workspace
+test_db.js
+config.js
+db.config.js
