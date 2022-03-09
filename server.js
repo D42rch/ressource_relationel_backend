@@ -14,9 +14,6 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-
-require('./routes/auth.routes')(app);
-require('./routes/user.routes')(app);
 require('./routes/tutorial.routes')(app);
 require('./routes/ressource.routes')(app);
 require('./routes/category.routes')(app);
