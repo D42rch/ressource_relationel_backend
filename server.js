@@ -14,6 +14,9 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
+
+require('./routes/auth.routes')(app);
+require('./routes/user.routes')(app);
 require('./routes/tutorial.routes')(app);
 require('./routes/ressource.routes')(app);
 require('./routes/category.routes')(app);
@@ -27,6 +30,9 @@ require('./routes/reportcomment.routes')(app);
 require('./routes/ressourcecomment.routes')(app);
 require('./routes/ressourcetype.routes')(app);
 require('./routes/role.routes')(app);
+require('./routes/rolepermission.routes')(app);
+require('./routes/sharetouser.routes')(app);
+require('./routes/visibilitytype.routes')(app);
 
 
 app.get('/', (req, res) => {
