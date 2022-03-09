@@ -34,7 +34,7 @@ exports.findAll = (req, res, next) => {
 },
 
 exports.update_by_id = (req, res, next) => {
-    return Ressource.findByPk(req.params.ressource_id)
+    return Ressource.findByPk(req.params.id)
         .then(ressource => {
             if (!ressource) {
                 throw { status: 404, message: 'Requested Ressource not found' };

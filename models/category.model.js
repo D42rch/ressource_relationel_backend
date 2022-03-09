@@ -1,6 +1,6 @@
 module.exports = (sequelize, Sequelize) => {
     const Category = sequelize.define('Category', {
-        name: {
+        c_name: {
             type: Sequelize.STRING,
         },
         owner_id: {

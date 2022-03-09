@@ -21,6 +21,15 @@ require('./routes/tutorial.routes')(app);
 require('./routes/ressource.routes')(app);
 require('./routes/category.routes')(app);
 require('./routes/comment.routes')(app);
+require('./routes/commentreact.routes')(app);
+require('./routes/message.routes')(app);
+require('./routes/permission.routes')(app);
+require('./routes/reaction.routes')(app);
+require('./routes/relationshiptype.routes')(app);
+require('./routes/reportcomment.routes')(app);
+require('./routes/ressourcecomment.routes')(app);
+require('./routes/ressourcetype.routes')(app);
+require('./routes/role.routes')(app);
 
 
 app.get('/', (req, res) => {

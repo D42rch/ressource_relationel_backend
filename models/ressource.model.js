@@ -23,12 +23,6 @@ module.exports = (sequelize, Sequelize) => {
         },
         userAccept: {
             type: Sequelize.INTEGER,
-        },
-        createdAt: {
-            type: Sequelize.DATE,
-        },
-        updatedAt: {
-            type: Sequelize.DATE,
         }
     })
 

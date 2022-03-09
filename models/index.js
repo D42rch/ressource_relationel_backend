@@ -25,6 +25,15 @@ db.user = require('./user.model')(sequelize, Sequelize);
 db.ressource = require('./ressource.model')(sequelize, Sequelize);
 db.category = require('./category.model')(sequelize, Sequelize);
 db.comment = require('./comment.model')(sequelize, Sequelize);
+db.commentreact = require('./commentreact.model')(sequelize, Sequelize);
+db.message = require('./message.model')(sequelize, Sequelize);
+db.permission = require('./permission.model')(sequelize, Sequelize);
+db.reaction = require('./reaction.model')(sequelize, Sequelize);
+db.relationshiptype = require('./relationshiptype.model')(sequelize, Sequelize);
+db.reportcomment = require('./reportcomment.model')(sequelize, Sequelize);
+db.ressourcecomment = require('./ressourcecomment.model')(sequelize, Sequelize);
+db.ressourcetype = require('./ressourcetype.model')(sequelize, Sequelize);
+db.role = require('./role.model')(sequelize, Sequelize);
 
 
 module.exports = db;
